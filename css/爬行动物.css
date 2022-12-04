@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.wrapper{
+    position: relative;
+    width: 1500px;
+    height: 1900px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.nav{
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    border-bottom: 3px solid rgb(85, 85, 85);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    top: 0px;
+    width: 100%;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 196, 0);
+}
+.nav li{
+    list-style: none;
+    flex-grow: 6;
+}
+.nav li:nth-child(2){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(3){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(4){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(5){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(6){
+    background-color:rgb(131, 18, 206);
+    flex-grow: 2;
+}
+.nav a{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: white;
+    color:rgb(131, 18, 206);
+}
+.container{
+    display: flex;
+}
+.Title{
+    position: absolute;
+    margin: 0 650px;
+}
+.box{
+    position: relative;
+    display: flex;  
+    width: 320px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    margin: 50px auto;
+}
+.box:hover .img{
+    opacity: 0;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transition: all .3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box .a{
+    background-image: url(../图片/壁虎.jpg);
+    background-position: -220px 0px;
+}
+.box .b{
+    background-image: url(../图片/蝾螈.jpg);
+    background-position: -100px 0px;
+}
+.box .c{
+    background-image: url(../图片/蜥鳄.jpg);
+    background-position: -100px 0px;
+}
+.box .d{
+    background-image: url(../图片/蛇.jpg);
+    background-position: -300px 0px;
+}
+.box .a1{
+    background-image: url(../图片/乌龟.jpg);
+    background-position: -350px 0px;
+}
+.box .b1{
+    background-image: url(..//图片/壁虎\ \(1\).jpg);
+    background-position: -280px 0px;
+}
+.box .c1{
+    background-image: url(../图片/鳖.jpg);
+    background-position: -160px 0px;
+}
+.box .d1{
+    background-image: url(../图片/变色龙.jpg);
+    background-position: -170px 0px;
+}
+.box .a2{
+    background-image: url(../图片/扬子鳄\ \(1\).jpg);
+    background-position: -220px 0px;
+}
+.box .b2{
+    background-image: url(../图片/蜥蜴.jpg);
+    background-position: -250px 0px;
+}
+.box .c2{
+    background-image: url(../图片/蜗牛.jpg);
+    background-position: -170px 0px;
+}
+.box .d2{
+    background-image: url(../图片/青蛙.jpg);
+    background-position: -200px 0px;
+}
+.title{
+    position: absolute;
+    transition: all .3s;
+    bottom: 0;
+    width: 280px;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-left: 20px;
+    color: white;
+}
+.title p{
+	padding: 10px;
+    font-size: 20px;
+    font-family: 'KaiTi';
+    color: black;
+}
+.title h2{
+    color: black;
+    text-align: center;
+}
+.box:hover .title{
+    height: 470px;
+}
+
+
+.buru-list {
+	display: none;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgb(0, 160, 253);
+	background-color: rgb(255, 255, 255);
+}
+
+.buru-list li {
+	border-top: .01em solid rgb(180, 180, 180);
+	list-style: none;
+	transition: all .2s ease-in;
+}
+
+.buru-list li a {
+	font-size: 16px;
+}
+
+.a1:hover .buru-list {
+	display: block;
+}
+
+.buru-list li:hover a {
+	color: black;
+	transform: scale(1.08);
+	background-color: white;
+}
+
+
+.list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.list a {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.list a:hover {
+	color: black;
+}
+
+.buru-list li:nth-child(6),
+.buru-list li:nth-child(1) {
+	background-color: black;
+}

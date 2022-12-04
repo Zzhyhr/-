@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.wrapper{
+    position: relative;
+    width: 1500px;
+    height: 1600px;
+    overflow: hidden;
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0 0 5px rgba(131, 18, 206, .5);
+}
+.nav{
+    display: flex;
+    position: sticky;
+    border-bottom: 3px solid rgb(85, 85, 85);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    top: 0px;
+    width: 100%;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 196, 0);
+}
+.nav li{
+    list-style: none;
+    flex-grow: 6;
+}
+.nav li:nth-child(2){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(3){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(4){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(5){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(6){
+    background-color:rgb(131, 18, 206);
+    flex-grow: 2;
+}
+.nav a{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: white;
+    color:rgb(131, 18, 206);
+}
+.paopao{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    bottom: 90px;
+    left: 0;
+}
+.paopao li:nth-child(1){
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    background-color: #0096fa80;
+    border-radius: 50%;
+    animation-delay: .4s;
+    animation: up1 10s infinite linear;
+}
+@keyframes up1{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(180px,-450px);
+    }
+    100%{
+        transform: translate(0px,-1900px);
+    }
+}
+.paopao li:nth-child(2){
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .3s;
+    animation: up2 5s infinite linear;
+}
+@keyframes up2{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(180px,-450px);
+    }
+    100%{
+        transform: translate(280px,-1900px);
+    }
+}
+.paopao li:nth-child(3){
+    width: 20px;
+    height: 20px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .1s;
+    animation: up3 6s infinite linear;
+}
+@keyframes up3{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0px,-450px);
+    }
+    100%{
+        transform: translate(0px,-1900px);
+    }
+}
+.paopao li:nth-child(4){
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .5s;
+    animation: up4 8s infinite linear;
+}
+@keyframes up4{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0px,-450px);
+    }
+    100%{
+        transform: translate(0px,-1900px);
+    }
+}
+.paopao li:nth-child(5){
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .3s;
+    animation: up5 5s infinite linear;
+}
+@keyframes up5{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(-120px,-450px);
+    }
+    100%{
+        transform: translate(-220px,-1900px);
+    }
+}
+.paopao li:nth-child(5){
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .3s;
+    animation: up5 6s infinite linear;
+}
+@keyframes up5{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(120px,-450px);
+    }
+    100%{
+        transform: translate(220px,-1900px);
+    }
+}
+.paopao li:nth-child(6){
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    background-color: #0096fa80;
+    border-radius: 50%;
+    animation-delay: .4s;
+    animation: up6 5.8s infinite linear;
+}
+@keyframes up6{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(180px,-450px);
+    }
+    100%{
+        transform: translate(0px,-1900px);
+    }
+}
+.paopao li:nth-child(7){
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .3s;
+    animation: up7 5s infinite linear;
+}
+@keyframes up7{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(-180px,-450px);
+    }
+    100%{
+        transform: translate(-280px,-1900px);
+    }
+}
+.paopao li:nth-child(8){
+    width: 20px;
+    height: 20px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .1s;
+    animation: up8 11s infinite linear;
+}
+@keyframes up8{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(10px,-450px);
+    }
+    100%{
+        transform: translate(50px,-1900px);
+    }
+}
+.paopao li:nth-child(9){
+    width: 110px;
+    height: 110px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .5s;
+    animation: up9 8s infinite linear;
+}
+@keyframes up9{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0px,-450px);
+    }
+    100%{
+        transform: translate(0px,-1900px);
+    }
+}
+.paopao li:nth-child(10){
+    width: 20px;
+    height: 20px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .3s;
+    animation: up10 5s infinite linear;
+}
+@keyframes up10{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(120px,-450px);
+    }
+    100%{
+        transform: translate(220px,-1900px);
+    }
+}
+.paopao li:nth-child(11){
+    width: 70px;
+    height: 70px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .1s;
+    animation: up11 8s infinite linear;
+}
+@keyframes up11{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(120px,-450px);
+    }
+    100%{
+        transform: translate(220px,-1900px);
+    }
+}
+.paopao li:nth-child(12){
+    width: 70px;
+    height: 70px;
+    margin: 0 30px;
+    background-color: rgba(0, 150, 250, 0.5);
+    border-radius: 50%;
+    animation-delay: .1s;
+    animation: up12 8s infinite linear;
+}
+@keyframes up12{
+    0%{transform: translate(0,0);
+    }
+    50%{
+        transform: translate(120px,-450px);
+    }
+    100%{
+        transform: translate(220px,-1900px);
+    }
+}
+.yu1{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 750px;
+    background-image: url(../图片/鱼.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    animation: yu1 20s infinite  linear;
+}
+@keyframes yu1{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1500px;
+    }
+}
+.yu2{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 750px;
+    background-image: url(../图片/鱼.png);
+    background-size: 5%;
+    background-repeat: no-repeat;
+    animation: yu2 16s infinite  linear;
+}
+@keyframes yu2{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1500px;
+    }
+}
+.yu3{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 750px;
+    background-image: url(../图片/鱼.png);
+    background-size: 6%;
+    background-repeat: no-repeat;
+    animation: yu3 10s infinite  linear;
+}
+@keyframes yu3{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1500px;
+    }
+}
+.yu4{
+    position: absolute;/*绝对定位*/
+    width: 800px;
+    height: 650px;
+    overflow: hidden;   /*控制内容溢出元素框时在对应元素 hidden为溢出不可见*/
+    margin-left: 0;     /*控制元素左边距 0即为左对齐*/
+    border-radius: 25%; /*定义圆角形状*/
+    background-image: url(../图片/松江鲈.jpeg); /*设置背景图像*/
+    z-index:0;      /*指定元素堆叠顺序*/
+    background-repeat: no-repeat; /*设置如何平铺背景图像 不重复 不平铺 */
+    background-size: cover; /*等比缩放至背景覆盖区域*/
+}
+.yu5{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin-left: 900px;
+    border-radius: 50%;
+    background-image: url(../图片/海马.jpg);
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
+    background-size: cover;
+}
+.yu6{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    margin-top: 600px;
+    margin-left: 400px;
+    border-radius: 50%;
+    background-image: url(../图片/水母.jpg);
+    background-size: cover;
+}
+ .title{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+
+.buru-list {
+	display: none;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgb(0, 160, 253);
+	background-color: rgb(255, 255, 255);
+
+}
+
+.buru-list li {
+	border-top: .01em solid rgb(180, 180, 180);
+	list-style: none;
+	transition: all .2s ease-in;
+}
+
+.buru-list li a {
+	font-size: 16px;
+}
+
+.a1:hover .buru-list {
+	display: block;
+}
+
+.buru-list li:hover a {
+	color: black;
+	transform: scale(1.08);
+	background-color: white;
+}
+
+
+.list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.list a {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.list a:hover {
+	color: black;
+}
+
+.buru-list li:nth-child(6),
+.buru-list li:nth-child(1) {
+	background-color: black;
+}

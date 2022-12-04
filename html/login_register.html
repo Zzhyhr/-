@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="../css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function login() {
+				let name = $("#login_name").val();
+				let pwd = $("#login_pwd").val();
+
+				if (name.length == 0 || pwd.length === 0) {
+					alert("用户名或密码不能为空！");
+				} else {
+					if (name == "html5kc" && pwd == "123456") {
+						location.href = "主页.html";
+					} else {
+						alert("用户名或密码不正确！");
+					}
+				}
+			}
+
+			function register() {
+				let name = $("#register_name").val();
+				let pwd = $("#register_pwd").val();
+				let pwd2 = $("#register_pwd2").val();
+
+				if (name.length == 0 || pwd.length === 0 || pwd2 == 0) {
+					alert("用户名或密码不能为空！");
+				} else {
+					if (pwd === pwd2) {
+						location.href = "主页.html";
+					} else {
+						alert("密码与确认密码不一致！");
+					}
+				}
+			}
+		</script>
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet'
+			type='text.css' />
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<h1>登录或创建你的账号</h1>
+			</div>
+			<form>
+				<ul class="left-form">
+					<h2>注册：</h2>
+					<li>
+						<input id="register_name" type="text" placeholder="用户名" maxlength="10" required />
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li>
+					<li>
+						<input id="register_pwd" type="password" placeholder="密码" maxlength="6" required />
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li>
+					<li>
+						<input id="register_pwd2" type="password" placeholder="确认密码" maxlength="6" required />
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li>
+					<li>
+						<input type="email" required placeholder="请输入邮箱地址" />
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li>
+					<li style="border: none;">
+						<h2 style="display: inline-block;">性别：</h2>
+						男
+						<input type="radio" required name="sex" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						女
+						<input type="radio" required name="sex" />
+					</li>
+					<li style="border: none;">
+						<h2 style="display: inline-block;">出生日期：</h2>
+						<input type="date" required />
+					</li>
+					<li style="border: none;">
+						<h2 style="display: inline-block;">兴趣爱好：</h2>
+						学习
+						<input type="checkbox" required />&nbsp;&nbsp;&nbsp;&nbsp;
+						编程
+						<input type="checkbox" required />&nbsp;&nbsp;&nbsp;&nbsp;
+						看书
+						<input type="checkbox" required />&nbsp;&nbsp;&nbsp;&nbsp;
+						运动
+						<input type="checkbox" required />
+					</li>
+					<li style="border: none;">
+						<h2 style="display: inline-block;">自我介绍：</h2>
+						<textarea rows="5" cols="50" style="border-radius: 5px;" placeholder="请输入自介绍"></textarea>
+					</li>
+					<input id="button_register" type="button" onclick="register()" value="创建用户">
+					<div class="clear"> </div>
+				</ul>
+				<ul class="right-form">
+					<h3>登录：</h3>
+					<div>
+						<li><input id="login_name" type="text" placeholder="用户名" maxlength="10" required /></li>
+						<li> <input id="login_pwd" type="password" placeholder="密码" maxlength="6" required /></li>
+						<h4>忘记密码？</h4>
+						<input id="button_login" type="button" onclick="login()" value="登录">
+					</div>
+					<div class="clear"> </div>
+				</ul>
+				<div class="clear"> </div>
+
+			</form>
+
+		</div>
+
+	</body>
+</html>

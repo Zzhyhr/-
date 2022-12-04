@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子</title>
+    <link rel="stylesheet" href="../css/雪豹页.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.wrapper{
+    position: relative;
+    width: 1500px;
+    height: 1900px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 0 5px rgba(131, 18, 206, .5);
+}
+.nav{
+    display: flex;
+    position: sticky;
+    border-bottom: 3px solid rgb(85, 85, 85);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    top: 0px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    width: 100%;
+    line-height: 55px;
+    margin: 0 auto;
+    background-color: rgb(131, 18, 206);
+}
+.nav li{
+    list-style: none;
+    flex-grow: 6;
+}
+.nav li:nth-child(2){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(3){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(4){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(5){
+    background-color: black;
+    flex-grow: 1;
+}
+.nav li:nth-child(6){
+    border-top-right-radius:25px;
+    background-color:rgb(131, 18, 206);
+    flex-grow: 2;
+}
+.nav a{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: white;
+    color:rgb(131, 18, 206);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <ul class="nav">
+                <li><a href="./主页.html">主页</a></li>
+                <li><a href="">哺乳类</a></li>
+                <li><a href="">鸟类</a></li>
+                <li><a href="">爬行类</a></li>
+                <li><a href="">鱼类</a></li>
+                <li><a href="">宣传片</a></li>
+            </ul>
+            </div>
+        </div>
